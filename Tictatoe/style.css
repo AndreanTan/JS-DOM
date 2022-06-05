@@ -1,0 +1,59 @@
+.board{
+    display: grid;
+    height: 50vh;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    align-content: center;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.box:first-child,
+.box:nth-child(2),
+.box:nth-child(3){
+    border-top: none;
+}
+
+.box:nth-child(3n+1){
+    border-left: none;
+}
+
+.box:nth-child(3n+3){
+    border-right: none;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:last-child{
+    border-bottom: none;
+}
+
+.container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button{
+    padding: 10px 100px;
+    border: none;
+    background-color: greenyellow;
+    border-radius: 8px;
+    font-family: arial;
+    font-size: 20px;
+}
+
+
+.cross{
+    background-color: yellow;
+}
+
+.circle{
+    background-color: blue;
+}
